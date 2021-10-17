@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --midnight-green-eagle-green: #074f57ff;
+  --teal-blue: #077187ff;
+  --forest-green-crayola: #74a57fff;
+  --eton-blue: #9ece9aff;
+  --isabelline: #faf4f0ff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.hyperlink-list-element :link {
+  list-style-type: none;
+  text-decoration: none;
+  padding-left: 25px;
+  color: var(--light-steel-blue);
+  font-size: 18px;
+}
+
+.hyperlink-list-element :hover {
+  color: var(--eton-blue);
+}
+
+.hyperlink-list {
+  list-style-type: none;
+}
+
+.hyperlink-list-header {
+  background-color: var(--forest-green-crayola);
+  margin-bottom: 20px;
+  color: var(--rich-black-fogra-39);
+}
+
+.hyperlink-list-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1000px) {
+  .hyperlink-list-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .hyperlink-list-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.equation-box {
+  padding: 10px 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.equation-box-normal {
+  border-radius: 5px;
+  border: 0;
+  font-size: 15px;
+  background-color: var(--isabelline);
+}
+
+.equation-box-error {
+  background-color: lightcoral;
+  border-radius: 3px;
+  border: 0;
+  font-size: 15px;
+}
+
+.equation-box-submit {
+  background-color: var(--teal-blue);
+  color: white;
+  border-radius: 3px;
+  border: none;
+  font-size: 15px;
+}
+
+.equation-box-submit:hover {
+  background-color: var(--midnight-green-eagle-green);
+  color: #aaaaaa;
+  border-radius: 3px;
+  border: none;
+}
+
+.title {
+  text-align: center;
+  background-color: var(--midnight-green-eagle-green);
+  color: white;
+  float: inline-start;
+  margin: 0;
+  border-bottom: solid 3px #000000;
+}
+
+.dashboard-page {
+  background-color: var(--isabelline);
+}
+
+.new-line {
+  white-space: pre-line;
+}
